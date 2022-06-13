@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# ship-it-out-client v3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+shipItOut-client practice with yarn, TypeScript, Cypress, react-router-dom v6, MUI v5, Formik, Yup, ESLint, Prettier, or at least that's the plan.
 
-## Available Scripts
+Maybe i'll add atom, graphql, ect as well.
 
-In the project directory, you can run:
+TODO:
 
-### `yarn start`
+Run
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+pnpm install --save @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx @babel/core @testing-library/dom @types/testing-library__jest-dom
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
 
-### `yarn test`
+to deal with yarn 3.2.0 startup issues
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Compiled successfully!
 
-### `yarn build`
+You can now view ship-it-out-client in the browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.1.65:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Note that the development build is not optimized.
+To create a production build, use yarn build.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+webpack compiled successfully
+ERROR in src/App.test.tsx:1:19
+TS2307: Cannot find module 'react' or its corresponding type declarations.
+  > 1 | import React from 'react';
+      |                   ^^^^^^^
+    2 | import { render, screen } from '@testing-library/react';
+    3 | import App from './App';
+```
 
-### `yarn eject`
+![image](https://user-images.githubusercontent.com/5026476/173350361-b1af513e-5081-4269-ad03-9179985adff5.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For making it work with vscode
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+yarn dlx @yarnpkg/sdks vscode
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+so vscode can resolve any yarn 3 dependencies.

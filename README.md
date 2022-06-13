@@ -44,3 +44,15 @@ yarn dlx @yarnpkg/sdks vscode
 ```
 
 so vscode can resolve any yarn 3 dependencies.
+
+TODO:
+
+Fix error.
+
+```
+Compiled with problems:X
+
+ERROR
+
+Failed to load config "react-app" to extend from.
+```

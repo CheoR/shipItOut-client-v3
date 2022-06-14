@@ -56,3 +56,12 @@ ERROR
 
 Failed to load config "react-app" to extend from.
 ```
+
+Once I figure out why errors persist after a fresh install, the plan is to rebuild the project along the lines of:
+
+1. Write/test DB method calls
+2. Build/test small components
+3. Test E2E
+
+I forgot whatese.
+

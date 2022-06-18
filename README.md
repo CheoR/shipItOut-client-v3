@@ -90,3 +90,5 @@ Once I figure out why errors persist after a fresh install, the plan is to rebui
 
 I forgot whatese.
 
+Decided to continue with using `npm` instead of `yarn`.
+

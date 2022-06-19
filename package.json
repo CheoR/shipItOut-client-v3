@@ -12,7 +12,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "eslintConfig": {
     "extends": [
@@ -33,26 +35,32 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.13.0",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/jest-dom": "^5.14.4",
+    "@testing-library/user-event": "^13.5.0",
     "@babel/core": "^7.18.5",
     "@babel/plugin-syntax-flow": "^7.17.12",
     "@babel/plugin-transform-react-jsx": "^7.17.12",
-    "@testing-library/dom": "^8.13.0",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.41",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "@types/testing-library__jest-dom": "^5.14.4",
-    "@typescript-eslint/eslint-plugin": "latest",
+    "typescript": "^4.7.3",
     "@typescript-eslint/parser": "^5.28.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "latest",
-    "eslint-config-airbnb-typescript": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "eslint": "^8.18.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "typescript": "^4.7.3"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "prettier": "^2.7.1"
   }
 }
+
+
